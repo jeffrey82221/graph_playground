@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "type_id": 1,
+      "label": "Customer",
+      "properties": {
+        "name": "str",
+        "email": "str"
+      }
+    },
+    {
+      "type_id": 2,
+      "label": "Order",
+      "properties": {
+        "order_id": "int",
+        "price": "float"
+      }
+    },
+    {
+      "type_id": 3,
+      "label": "Product",
+      "properties": {
+        "prod": "int",
+        "name": "str"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "label": "PLACED",
+      "directed": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "CONTAINS",
+      "directed": true
+    }
+  ]
+}
