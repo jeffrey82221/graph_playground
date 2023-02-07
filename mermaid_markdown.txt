@@ -1,0 +1,12 @@
+erDiagram
+    CUSTOMER ||--|| DELIVERY-ADDRESS : has
+    CUSTOMER ||--|| ORDER : places
+    CUSTOMER ||--|| INVOICE : "liable for"
+    DELIVERY-ADDRESS ||--|| ORDER : receives
+    INVOICE ||--|| ORDER : covers
+    ORDER ||--|| ORDER-ITEM : includes
+    PRODUCT-CATEGORY ||--|| PRODUCT : contains
+    PRODUCT ||--|| ORDER-ITEM : "ordered in"
+
+
+# https://mermaid.live/edit#pako:eNp10VFrwjAQB_CvEu7ZfIG8SROkMNeRVkHIyy05Z1jbSGwFsX73pbOFzbm85fjd_7jkCjY4AgEUpcePiI1pWTrZpqyKtdJsGDgfBibVS75VeseXUmpVlkywA56e20LLdBHsWKOlf0z-ui3yTCVloPb4XhPbh2jgrv9Me0iOZMmf5-w56wHZcKY4kXvtJ-B5pdZJ-dbWvZuj3nQhN1nFs2WlVoXezS1T_Tu17dC3v_3TZAMhOork0gwDsICGYoPepce-jt0GugM1ZGCkDuPnuP0tOey7UF5aC6KLPS2gPzrsaPoeEHusT3T7As_ihsE
