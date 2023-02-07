@@ -1,4 +1,13 @@
 erDiagram
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
     CUSTOMER ||--|| DELIVERY-ADDRESS : has
     CUSTOMER ||--|| ORDER : places
     CUSTOMER ||--|| INVOICE : "liable for"
